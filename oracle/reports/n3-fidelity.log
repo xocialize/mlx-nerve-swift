@@ -1,0 +1,221 @@
+MLX_ENABLE_TF32=(unset → mlx default, on)
+   2x_NERVE_OTF_gan/photo-a__bicubic: fp16 78.1 dB · bf16 64.0 dB · fp16-all 73.6 dB (vs fp32)
+   2x_NERVE_OTF_gan/photo-a__jpeg: fp16 75.5 dB · bf16 62.3 dB · fp16-all 72.7 dB (vs fp32)
+   2x_NERVE_OTF_gan/photo-a__lanczos: fp16 78.4 dB · bf16 64.3 dB · fp16-all 73.6 dB (vs fp32)
+   2x_NERVE_OTF_gan/graphic-a__bicubic: fp16 77.8 dB · bf16 62.7 dB · fp16-all 72.2 dB (vs fp32)
+   2x_NERVE_OTF_gan/graphic-a__jpeg: fp16 75.2 dB · bf16 61.5 dB · fp16-all 71.4 dB (vs fp32)
+   2x_NERVE_OTF_gan/graphic-a__lanczos: fp16 77.7 dB · bf16 62.6 dB · fp16-all 72.1 dB (vs fp32)
+   2x_NERVE_OTF_gan/photo-b__bicubic: fp16 77.3 dB · bf16 63.6 dB · fp16-all 72.8 dB (vs fp32)
+   2x_NERVE_OTF_gan/photo-b__jpeg: fp16 74.5 dB · bf16 61.6 dB · fp16-all 71.8 dB (vs fp32)
+   2x_NERVE_OTF_gan/photo-b__lanczos: fp16 77.7 dB · bf16 63.9 dB · fp16-all 72.9 dB (vs fp32)
+   2x_NERVE_OTF_gan/graphic-b__bicubic: fp16 78.5 dB · bf16 63.4 dB · fp16-all 72.4 dB (vs fp32)
+   2x_NERVE_OTF_gan/graphic-b__jpeg: fp16 76.4 dB · bf16 62.1 dB · fp16-all 72.0 dB (vs fp32)
+   2x_NERVE_OTF_gan/graphic-b__lanczos: fp16 78.3 dB · bf16 63.3 dB · fp16-all 72.4 dB (vs fp32)
+   2x_NERVE_OTF_gan/photo-c__bicubic: fp16 77.7 dB · bf16 63.4 dB · fp16-all 73.2 dB (vs fp32)
+   2x_NERVE_OTF_gan/photo-c__jpeg: fp16 74.4 dB · bf16 61.4 dB · fp16-all 71.8 dB (vs fp32)
+   2x_NERVE_OTF_gan/photo-c__lanczos: fp16 77.8 dB · bf16 63.4 dB · fp16-all 73.2 dB (vs fp32)
+   2x_NERVE_OTF_gan/graphic-c__bicubic: fp16 79.7 dB · bf16 64.6 dB · fp16-all 72.4 dB (vs fp32)
+   2x_NERVE_OTF_gan/graphic-c__jpeg: fp16 77.2 dB · bf16 63.4 dB · fp16-all 72.0 dB (vs fp32)
+   2x_NERVE_OTF_gan/graphic-c__lanczos: fp16 79.1 dB · bf16 64.4 dB · fp16-all 72.3 dB (vs fp32)
+   2x_NERVE_OTF_gan/photo-d__bicubic: fp16 76.9 dB · bf16 62.2 dB · fp16-all 73.1 dB (vs fp32)
+   2x_NERVE_OTF_gan/photo-d__jpeg: fp16 73.3 dB · bf16 60.0 dB · fp16-all 71.5 dB (vs fp32)
+   2x_NERVE_OTF_gan/photo-d__lanczos: fp16 77.3 dB · bf16 62.3 dB · fp16-all 73.3 dB (vs fp32)
+   2x_NERVE_OTF_gan/graphic-d__bicubic: fp16 80.4 dB · bf16 65.4 dB · fp16-all 72.6 dB (vs fp32)
+   2x_NERVE_OTF_gan/graphic-d__jpeg: fp16 78.2 dB · bf16 63.8 dB · fp16-all 72.3 dB (vs fp32)
+   2x_NERVE_OTF_gan/graphic-d__lanczos: fp16 80.2 dB · bf16 65.4 dB · fp16-all 72.6 dB (vs fp32)
+   2x_NERVE_OTF_gan/photo-e__bicubic: fp16 79.0 dB · bf16 63.8 dB · fp16-all 74.5 dB (vs fp32)
+   2x_NERVE_OTF_gan/photo-e__jpeg: fp16 76.3 dB · bf16 62.4 dB · fp16-all 73.5 dB (vs fp32)
+   2x_NERVE_OTF_gan/photo-e__lanczos: fp16 79.2 dB · bf16 64.0 dB · fp16-all 74.5 dB (vs fp32)
+N3 2x_NERVE_OTF_gan (27 cells, GPU, float PSNR peak 1 — worst / median):
+   bf16 8-bit vs fp32: worst 55.9 dB · median 57.5 dB
+   bf16 vs fp32: worst 60.0 dB · median 63.4 dB
+   bf16 vs torch: worst 60.0 dB · median 63.4 dB
+   fp16 8-bit vs fp32: worst 62.9 dB · median 65.1 dB
+   fp16 vs fp32: worst 73.3 dB · median 77.7 dB
+   fp16 vs torch: worst 73.3 dB · median 77.7 dB
+   fp16-all 8-bit vs fp32: worst 59.8 dB · median 60.8 dB
+   fp16-all vs fp32: worst 71.4 dB · median 72.6 dB
+   fp16-all vs torch: worst 71.4 dB · median 72.6 dB
+   fp32 8-bit vs torch: worst 95.2 dB · median 96.7 dB
+   fp32 vs fp32: worst inf dB · median inf dB
+   fp32 vs torch: worst 139.4 dB · median 140.3 dB
+   bf16 8-bit output: worst max |Δ| 10 level(s), worst share of samples changed 16.261%
+   fp16 8-bit output: worst max |Δ| 2 level(s), worst share of samples changed 3.305%
+   fp16-all 8-bit output: worst max |Δ| 2 level(s), worst share of samples changed 6.768%
+   fp32 8-bit output: worst max |Δ| 1 level(s), worst share of samples changed 0.002%
+   2x_NERVE_release/photo-a__bicubic: fp16 85.3 dB · bf16 72.4 dB · fp16-all 74.8 dB (vs fp32)
+   2x_NERVE_release/photo-a__jpeg: fp16 84.0 dB · bf16 71.2 dB · fp16-all 74.5 dB (vs fp32)
+   2x_NERVE_release/photo-a__lanczos: fp16 85.2 dB · bf16 72.5 dB · fp16-all 74.8 dB (vs fp32)
+   2x_NERVE_release/graphic-a__bicubic: fp16 82.1 dB · bf16 70.2 dB · fp16-all 72.9 dB (vs fp32)
+   2x_NERVE_release/graphic-a__jpeg: fp16 79.2 dB · bf16 65.7 dB · fp16-all 71.9 dB (vs fp32)
+   2x_NERVE_release/graphic-a__lanczos: fp16 82.7 dB · bf16 70.8 dB · fp16-all 72.9 dB (vs fp32)
+   2x_NERVE_release/photo-b__bicubic: fp16 84.3 dB · bf16 72.2 dB · fp16-all 74.0 dB (vs fp32)
+   2x_NERVE_release/photo-b__jpeg: fp16 82.7 dB · bf16 70.5 dB · fp16-all 73.7 dB (vs fp32)
+   2x_NERVE_release/photo-b__lanczos: fp16 84.4 dB · bf16 72.0 dB · fp16-all 73.9 dB (vs fp32)
+   2x_NERVE_release/graphic-b__bicubic: fp16 83.4 dB · bf16 70.9 dB · fp16-all 73.2 dB (vs fp32)
+   2x_NERVE_release/graphic-b__jpeg: fp16 81.0 dB · bf16 67.7 dB · fp16-all 72.3 dB (vs fp32)
+   2x_NERVE_release/graphic-b__lanczos: fp16 83.5 dB · bf16 71.7 dB · fp16-all 73.1 dB (vs fp32)
+   2x_NERVE_release/photo-c__bicubic: fp16 83.4 dB · bf16 71.1 dB · fp16-all 74.4 dB (vs fp32)
+   2x_NERVE_release/photo-c__jpeg: fp16 83.0 dB · bf16 70.6 dB · fp16-all 74.0 dB (vs fp32)
+   2x_NERVE_release/photo-c__lanczos: fp16 83.1 dB · bf16 70.9 dB · fp16-all 74.2 dB (vs fp32)
+   2x_NERVE_release/graphic-c__bicubic: fp16 84.9 dB · bf16 73.2 dB · fp16-all 73.2 dB (vs fp32)
+   2x_NERVE_release/graphic-c__jpeg: fp16 82.5 dB · bf16 69.4 dB · fp16-all 72.0 dB (vs fp32)
+   2x_NERVE_release/graphic-c__lanczos: fp16 84.3 dB · bf16 73.3 dB · fp16-all 73.0 dB (vs fp32)
+   2x_NERVE_release/photo-d__bicubic: fp16 82.6 dB · bf16 70.0 dB · fp16-all 74.3 dB (vs fp32)
+   2x_NERVE_release/photo-d__jpeg: fp16 83.1 dB · bf16 70.9 dB · fp16-all 74.5 dB (vs fp32)
+   2x_NERVE_release/photo-d__lanczos: fp16 82.6 dB · bf16 69.9 dB · fp16-all 74.2 dB (vs fp32)
+   2x_NERVE_release/graphic-d__bicubic: fp16 86.3 dB · bf16 74.2 dB · fp16-all 73.3 dB (vs fp32)
+   2x_NERVE_release/graphic-d__jpeg: fp16 84.5 dB · bf16 71.0 dB · fp16-all 72.3 dB (vs fp32)
+   2x_NERVE_release/graphic-d__lanczos: fp16 85.5 dB · bf16 74.0 dB · fp16-all 73.2 dB (vs fp32)
+   2x_NERVE_release/photo-e__bicubic: fp16 84.5 dB · bf16 71.8 dB · fp16-all 75.6 dB (vs fp32)
+   2x_NERVE_release/photo-e__jpeg: fp16 84.4 dB · bf16 71.6 dB · fp16-all 75.4 dB (vs fp32)
+   2x_NERVE_release/photo-e__lanczos: fp16 84.7 dB · bf16 71.8 dB · fp16-all 75.5 dB (vs fp32)
+N3 2x_NERVE_release (27 cells, GPU, float PSNR peak 1 — worst / median):
+   bf16 8-bit vs fp32: worst 61.1 dB · median 63.9 dB
+   bf16 vs fp32: worst 65.7 dB · median 71.1 dB
+   bf16 vs torch: worst 65.7 dB · median 71.1 dB
+   fp16 8-bit vs fp32: worst 67.7 dB · median 69.9 dB
+   fp16 vs fp32: worst 79.2 dB · median 83.5 dB
+   fp16 vs torch: worst 79.2 dB · median 83.5 dB
+   fp16-all 8-bit vs fp32: worst 61.8 dB · median 63.5 dB
+   fp16-all vs fp32: worst 71.9 dB · median 73.9 dB
+   fp16-all vs torch: worst 71.9 dB · median 73.9 dB
+   fp32 8-bit vs torch: worst 97.2 dB · median 100.3 dB
+   fp32 vs fp32: worst inf dB · median inf dB
+   fp32 vs torch: worst 141.8 dB · median 144.0 dB
+   bf16 8-bit output: worst max |Δ| 7 level(s), worst share of samples changed 4.719%
+   fp16 8-bit output: worst max |Δ| 2 level(s), worst share of samples changed 1.099%
+   fp16-all 8-bit output: worst max |Δ| 2 level(s), worst share of samples changed 4.255%
+   fp32 8-bit output: worst max |Δ| 1 level(s), worst share of samples changed 0.001%
+   4x_NERVE_OTF_fidelity/photo-a__bicubic: fp16 82.4 dB · bf16 68.2 dB · fp16-all 72.8 dB (vs fp32)
+   4x_NERVE_OTF_fidelity/photo-a__jpeg: fp16 79.1 dB · bf16 65.7 dB · fp16-all 72.5 dB (vs fp32)
+   4x_NERVE_OTF_fidelity/photo-a__lanczos: fp16 82.5 dB · bf16 68.4 dB · fp16-all 72.8 dB (vs fp32)
+   4x_NERVE_OTF_fidelity/graphic-a__bicubic: fp16 81.0 dB · bf16 65.0 dB · fp16-all 70.0 dB (vs fp32)
+   4x_NERVE_OTF_fidelity/graphic-a__jpeg: fp16 78.2 dB · bf16 63.7 dB · fp16-all 69.6 dB (vs fp32)
+   4x_NERVE_OTF_fidelity/graphic-a__lanczos: fp16 80.9 dB · bf16 65.0 dB · fp16-all 70.0 dB (vs fp32)
+   4x_NERVE_OTF_fidelity/photo-b__bicubic: fp16 81.2 dB · bf16 67.5 dB · fp16-all 72.1 dB (vs fp32)
+   4x_NERVE_OTF_fidelity/photo-b__jpeg: fp16 77.6 dB · bf16 65.1 dB · fp16-all 71.7 dB (vs fp32)
+   4x_NERVE_OTF_fidelity/photo-b__lanczos: fp16 81.2 dB · bf16 67.8 dB · fp16-all 72.1 dB (vs fp32)
+   4x_NERVE_OTF_fidelity/graphic-b__bicubic: fp16 81.9 dB · bf16 65.5 dB · fp16-all 70.2 dB (vs fp32)
+   4x_NERVE_OTF_fidelity/graphic-b__jpeg: fp16 79.4 dB · bf16 64.2 dB · fp16-all 69.9 dB (vs fp32)
+   4x_NERVE_OTF_fidelity/graphic-b__lanczos: fp16 81.7 dB · bf16 65.5 dB · fp16-all 70.2 dB (vs fp32)
+   4x_NERVE_OTF_fidelity/photo-c__bicubic: fp16 82.2 dB · bf16 67.4 dB · fp16-all 72.9 dB (vs fp32)
+   4x_NERVE_OTF_fidelity/photo-c__jpeg: fp16 78.2 dB · bf16 65.2 dB · fp16-all 72.2 dB (vs fp32)
+   4x_NERVE_OTF_fidelity/photo-c__lanczos: fp16 82.4 dB · bf16 67.5 dB · fp16-all 73.0 dB (vs fp32)
+   4x_NERVE_OTF_fidelity/graphic-c__bicubic: fp16 82.5 dB · bf16 66.3 dB · fp16-all 69.8 dB (vs fp32)
+   4x_NERVE_OTF_fidelity/graphic-c__jpeg: fp16 79.8 dB · bf16 64.9 dB · fp16-all 69.6 dB (vs fp32)
+   4x_NERVE_OTF_fidelity/graphic-c__lanczos: fp16 82.5 dB · bf16 66.3 dB · fp16-all 69.8 dB (vs fp32)
+   4x_NERVE_OTF_fidelity/photo-d__bicubic: fp16 82.6 dB · bf16 67.9 dB · fp16-all 73.3 dB (vs fp32)
+   4x_NERVE_OTF_fidelity/photo-d__jpeg: fp16 78.5 dB · bf16 65.6 dB · fp16-all 72.8 dB (vs fp32)
+   4x_NERVE_OTF_fidelity/photo-d__lanczos: fp16 82.8 dB · bf16 67.9 dB · fp16-all 73.4 dB (vs fp32)
+   4x_NERVE_OTF_fidelity/graphic-d__bicubic: fp16 83.3 dB · bf16 66.9 dB · fp16-all 70.0 dB (vs fp32)
+   4x_NERVE_OTF_fidelity/graphic-d__jpeg: fp16 80.6 dB · bf16 65.3 dB · fp16-all 69.8 dB (vs fp32)
+   4x_NERVE_OTF_fidelity/graphic-d__lanczos: fp16 83.0 dB · bf16 66.9 dB · fp16-all 69.9 dB (vs fp32)
+   4x_NERVE_OTF_fidelity/photo-e__bicubic: fp16 83.0 dB · bf16 67.4 dB · fp16-all 73.2 dB (vs fp32)
+   4x_NERVE_OTF_fidelity/photo-e__jpeg: fp16 80.1 dB · bf16 65.3 dB · fp16-all 73.2 dB (vs fp32)
+   4x_NERVE_OTF_fidelity/photo-e__lanczos: fp16 83.2 dB · bf16 67.6 dB · fp16-all 73.3 dB (vs fp32)
+N3 4x_NERVE_OTF_fidelity (27 cells, GPU, float PSNR peak 1 — worst / median):
+   bf16 8-bit vs fp32: worst 57.5 dB · median 59.1 dB
+   bf16 vs fp32: worst 63.7 dB · median 66.3 dB
+   bf16 vs torch: worst 63.7 dB · median 66.3 dB
+   fp16 8-bit vs fp32: worst 65.2 dB · median 66.2 dB
+   fp16 vs fp32: worst 77.6 dB · median 81.7 dB
+   fp16 vs torch: worst 77.6 dB · median 81.7 dB
+   fp16-all 8-bit vs fp32: worst 59.1 dB · median 61.3 dB
+   fp16-all vs fp32: worst 69.6 dB · median 72.1 dB
+   fp16-all vs torch: worst 69.6 dB · median 72.1 dB
+   fp32 8-bit vs torch: worst 94.8 dB · median 97.9 dB
+   fp32 vs fp32: worst inf dB · median inf dB
+   fp32 vs torch: worst 140.9 dB · median 142.7 dB
+   bf16 8-bit output: worst max |Δ| 8 level(s), worst share of samples changed 11.347%
+   fp16 8-bit output: worst max |Δ| 2 level(s), worst share of samples changed 1.953%
+   fp16-all 8-bit output: worst max |Δ| 2 level(s), worst share of samples changed 7.953%
+   fp32 8-bit output: worst max |Δ| 1 level(s), worst share of samples changed 0.002%
+   4x_NERVE_OTF_gan/photo-a__bicubic: fp16 78.0 dB · bf16 64.2 dB · fp16-all 72.1 dB (vs fp32)
+   4x_NERVE_OTF_gan/photo-a__jpeg: fp16 74.3 dB · bf16 61.8 dB · fp16-all 71.0 dB (vs fp32)
+   4x_NERVE_OTF_gan/photo-a__lanczos: fp16 78.2 dB · bf16 64.5 dB · fp16-all 72.1 dB (vs fp32)
+   4x_NERVE_OTF_gan/graphic-a__bicubic: fp16 77.8 dB · bf16 61.8 dB · fp16-all 70.0 dB (vs fp32)
+   4x_NERVE_OTF_gan/graphic-a__jpeg: fp16 74.7 dB · bf16 60.8 dB · fp16-all 69.0 dB (vs fp32)
+   4x_NERVE_OTF_gan/graphic-a__lanczos: fp16 78.3 dB · bf16 62.1 dB · fp16-all 70.1 dB (vs fp32)
+   4x_NERVE_OTF_gan/photo-b__bicubic: fp16 76.9 dB · bf16 63.5 dB · fp16-all 71.3 dB (vs fp32)
+   4x_NERVE_OTF_gan/photo-b__jpeg: fp16 72.0 dB · bf16 60.4 dB · fp16-all 69.5 dB (vs fp32)
+   4x_NERVE_OTF_gan/photo-b__lanczos: fp16 77.1 dB · bf16 63.9 dB · fp16-all 71.3 dB (vs fp32)
+   4x_NERVE_OTF_gan/graphic-b__bicubic: fp16 79.1 dB · bf16 63.3 dB · fp16-all 70.4 dB (vs fp32)
+   4x_NERVE_OTF_gan/graphic-b__jpeg: fp16 75.4 dB · bf16 61.4 dB · fp16-all 69.3 dB (vs fp32)
+   4x_NERVE_OTF_gan/graphic-b__lanczos: fp16 79.3 dB · bf16 63.4 dB · fp16-all 70.4 dB (vs fp32)
+   4x_NERVE_OTF_gan/photo-c__bicubic: fp16 76.2 dB · bf16 62.7 dB · fp16-all 71.6 dB (vs fp32)
+   4x_NERVE_OTF_gan/photo-c__jpeg: fp16 71.1 dB · bf16 60.1 dB · fp16-all 69.2 dB (vs fp32)
+   4x_NERVE_OTF_gan/photo-c__lanczos: fp16 76.2 dB · bf16 62.7 dB · fp16-all 71.7 dB (vs fp32)
+   4x_NERVE_OTF_gan/graphic-c__bicubic: fp16 80.0 dB · bf16 64.4 dB · fp16-all 70.2 dB (vs fp32)
+   4x_NERVE_OTF_gan/graphic-c__jpeg: fp16 76.3 dB · bf16 62.9 dB · fp16-all 69.2 dB (vs fp32)
+   4x_NERVE_OTF_gan/graphic-c__lanczos: fp16 80.0 dB · bf16 64.4 dB · fp16-all 70.2 dB (vs fp32)
+   4x_NERVE_OTF_gan/photo-d__bicubic: fp16 75.5 dB · bf16 60.0 dB · fp16-all 71.4 dB (vs fp32)
+   4x_NERVE_OTF_gan/photo-d__jpeg: fp16 70.5 dB · bf16 58.1 dB · fp16-all 68.8 dB (vs fp32)
+   4x_NERVE_OTF_gan/photo-d__lanczos: fp16 75.7 dB · bf16 60.3 dB · fp16-all 71.5 dB (vs fp32)
+   4x_NERVE_OTF_gan/graphic-d__bicubic: fp16 81.0 dB · bf16 65.9 dB · fp16-all 70.4 dB (vs fp32)
+   4x_NERVE_OTF_gan/graphic-d__jpeg: fp16 76.8 dB · bf16 63.2 dB · fp16-all 69.4 dB (vs fp32)
+   4x_NERVE_OTF_gan/graphic-d__lanczos: fp16 81.2 dB · bf16 66.2 dB · fp16-all 70.4 dB (vs fp32)
+   4x_NERVE_OTF_gan/photo-e__bicubic: fp16 77.4 dB · bf16 63.6 dB · fp16-all 72.0 dB (vs fp32)
+   4x_NERVE_OTF_gan/photo-e__jpeg: fp16 73.7 dB · bf16 60.6 dB · fp16-all 71.0 dB (vs fp32)
+   4x_NERVE_OTF_gan/photo-e__lanczos: fp16 77.6 dB · bf16 63.8 dB · fp16-all 72.1 dB (vs fp32)
+N3 4x_NERVE_OTF_gan (27 cells, GPU, float PSNR peak 1 — worst / median):
+   bf16 8-bit vs fp32: worst 55.2 dB · median 57.9 dB
+   bf16 vs fp32: worst 58.1 dB · median 62.9 dB
+   bf16 vs torch: worst 58.1 dB · median 62.9 dB
+   fp16 8-bit vs fp32: worst 62.4 dB · median 65.5 dB
+   fp16 vs fp32: worst 70.5 dB · median 76.9 dB
+   fp16 vs torch: worst 70.5 dB · median 76.9 dB
+   fp16-all 8-bit vs fp32: worst 58.9 dB · median 60.7 dB
+   fp16-all vs fp32: worst 68.8 dB · median 70.4 dB
+   fp16-all vs torch: worst 68.8 dB · median 70.4 dB
+   fp32 8-bit vs torch: worst 95.0 dB · median 96.8 dB
+   fp32 vs fp32: worst inf dB · median inf dB
+   fp32 vs torch: worst 138.3 dB · median 139.7 dB
+   bf16 8-bit output: worst max |Δ| 14 level(s), worst share of samples changed 16.492%
+   fp16 8-bit output: worst max |Δ| 7 level(s), worst share of samples changed 3.736%
+   fp16-all 8-bit output: worst max |Δ| 7 level(s), worst share of samples changed 8.318%
+   fp32 8-bit output: worst max |Δ| 1 level(s), worst share of samples changed 0.002%
+   4x_NERVE_release/photo-a__bicubic: fp16 83.3 dB · bf16 69.7 dB · fp16-all 72.6 dB (vs fp32)
+   4x_NERVE_release/photo-a__jpeg: fp16 80.5 dB · bf16 67.9 dB · fp16-all 72.3 dB (vs fp32)
+   4x_NERVE_release/photo-a__lanczos: fp16 83.2 dB · bf16 69.7 dB · fp16-all 72.6 dB (vs fp32)
+   4x_NERVE_release/graphic-a__bicubic: fp16 81.4 dB · bf16 67.6 dB · fp16-all 70.1 dB (vs fp32)
+   4x_NERVE_release/graphic-a__jpeg: fp16 77.0 dB · bf16 63.5 dB · fp16-all 69.2 dB (vs fp32)
+   4x_NERVE_release/graphic-a__lanczos: fp16 81.7 dB · bf16 68.2 dB · fp16-all 70.1 dB (vs fp32)
+   4x_NERVE_release/photo-b__bicubic: fp16 82.7 dB · bf16 69.5 dB · fp16-all 71.9 dB (vs fp32)
+   4x_NERVE_release/photo-b__jpeg: fp16 79.8 dB · bf16 67.5 dB · fp16-all 71.6 dB (vs fp32)
+   4x_NERVE_release/photo-b__lanczos: fp16 82.6 dB · bf16 69.4 dB · fp16-all 71.9 dB (vs fp32)
+   4x_NERVE_release/graphic-b__bicubic: fp16 82.6 dB · bf16 68.8 dB · fp16-all 70.3 dB (vs fp32)
+   4x_NERVE_release/graphic-b__jpeg: fp16 78.7 dB · bf16 65.0 dB · fp16-all 69.6 dB (vs fp32)
+   4x_NERVE_release/graphic-b__lanczos: fp16 82.7 dB · bf16 69.2 dB · fp16-all 70.3 dB (vs fp32)
+   4x_NERVE_release/photo-c__bicubic: fp16 81.4 dB · bf16 68.6 dB · fp16-all 72.5 dB (vs fp32)
+   4x_NERVE_release/photo-c__jpeg: fp16 79.7 dB · bf16 67.4 dB · fp16-all 72.1 dB (vs fp32)
+   4x_NERVE_release/photo-c__lanczos: fp16 81.1 dB · bf16 68.1 dB · fp16-all 72.4 dB (vs fp32)
+   4x_NERVE_release/graphic-c__bicubic: fp16 84.2 dB · bf16 70.8 dB · fp16-all 70.0 dB (vs fp32)
+   4x_NERVE_release/graphic-c__jpeg: fp16 80.3 dB · bf16 66.9 dB · fp16-all 69.4 dB (vs fp32)
+   4x_NERVE_release/graphic-c__lanczos: fp16 84.0 dB · bf16 71.0 dB · fp16-all 70.0 dB (vs fp32)
+   4x_NERVE_release/photo-d__bicubic: fp16 80.4 dB · bf16 67.4 dB · fp16-all 72.7 dB (vs fp32)
+   4x_NERVE_release/photo-d__jpeg: fp16 80.2 dB · bf16 68.0 dB · fp16-all 72.6 dB (vs fp32)
+   4x_NERVE_release/photo-d__lanczos: fp16 80.0 dB · bf16 67.1 dB · fp16-all 72.6 dB (vs fp32)
+   4x_NERVE_release/graphic-d__bicubic: fp16 85.3 dB · bf16 72.0 dB · fp16-all 70.2 dB (vs fp32)
+   4x_NERVE_release/graphic-d__jpeg: fp16 82.2 dB · bf16 68.6 dB · fp16-all 69.6 dB (vs fp32)
+   4x_NERVE_release/graphic-d__lanczos: fp16 84.9 dB · bf16 72.0 dB · fp16-all 70.2 dB (vs fp32)
+   4x_NERVE_release/photo-e__bicubic: fp16 82.1 dB · bf16 68.4 dB · fp16-all 73.1 dB (vs fp32)
+   4x_NERVE_release/photo-e__jpeg: fp16 79.9 dB · bf16 67.3 dB · fp16-all 72.6 dB (vs fp32)
+   4x_NERVE_release/photo-e__lanczos: fp16 82.6 dB · bf16 68.6 dB · fp16-all 73.1 dB (vs fp32)
+N3 4x_NERVE_release (27 cells, GPU, float PSNR peak 1 — worst / median):
+   bf16 8-bit vs fp32: worst 60.1 dB · median 62.7 dB
+   bf16 vs fp32: worst 63.5 dB · median 68.4 dB
+   bf16 vs torch: worst 63.5 dB · median 68.4 dB
+   fp16 8-bit vs fp32: worst 67.3 dB · median 69.4 dB
+   fp16 vs fp32: worst 77.0 dB · median 81.7 dB
+   fp16 vs torch: worst 77.0 dB · median 81.7 dB
+   fp16-all 8-bit vs fp32: worst 60.4 dB · median 62.5 dB
+   fp16-all vs fp32: worst 69.2 dB · median 71.9 dB
+   fp16-all vs torch: worst 69.2 dB · median 71.9 dB
+   fp32 8-bit vs torch: worst 97.5 dB · median 99.9 dB
+   fp32 vs fp32: worst inf dB · median inf dB
+   fp32 vs torch: worst 141.4 dB · median 143.6 dB
+   bf16 8-bit output: worst max |Δ| 10 level(s), worst share of samples changed 5.495%
+   fp16 8-bit output: worst max |Δ| 4 level(s), worst share of samples changed 1.225%
+   fp16-all 8-bit output: worst max |Δ| 3 level(s), worst share of samples changed 5.926%
+   fp32 8-bit output: worst max |Δ| 1 level(s), worst share of samples changed 0.001%

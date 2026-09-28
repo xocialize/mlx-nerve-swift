@@ -1,0 +1,6 @@
+reference run: 5.490 s for 40 tiles (≈ 137.3 ms/tile)
+CANCEL ✅ CancellationError (unwrapped, through MLXServeEngine) · cancel at 0.50 s · time-to-throw 135 ms (uncancelled run 5.490 s, 40 tiles, ≈ 137 ms/tile)
+reference run: 5.541 s for 40 tiles (≈ 138.5 ms/tile)
+CANCEL ✅ CancellationError (unwrapped, through MLXServeEngine) · cancel at 1.50 s · time-to-throw 107 ms (uncancelled run 5.541 s, 40 tiles, ≈ 139 ms/tile)
+reference run: 5.591 s for 40 tiles (≈ 139.8 ms/tile)
+CANCEL ✅ CancellationError (unwrapped, through MLXServeEngine) · cancel at 3.00 s · time-to-throw 69 ms (uncancelled run 5.591 s, 40 tiles, ≈ 140 ms/tile)

@@ -1,0 +1,9 @@
+MLX_ENABLE_TF32=0
+S0 4x_NERVE_OTF_fidelity ×4: 50 tensors · generated 50 · missing 0 · unused 0 · shape≠ 0 · dtypes ["F32"] · 1801920 params · layout OHWI · upstream keys == · OIHW↔OHWI ✓ · src sha e05f589bde0b  ✅
+S0 4x_NERVE_release ×4: 50 tensors · generated 50 · missing 0 · unused 0 · shape≠ 0 · dtypes ["F32"] · 1801920 params · layout OHWI · upstream keys == · OIHW↔OHWI ✓ · src sha 07bee958c168  ✅
+S0 2x_NERVE_release ×2: 50 tensors · generated 50 · missing 0 · unused 0 · shape≠ 0 · dtypes ["F32"] · 1781184 params · layout OHWI · upstream keys == · OIHW↔OHWI ✓ · src sha 241dc6a6cb2e  ✅
+S0 4x_NERVE_OTF_gan ×4: 50 tensors · generated 50 · missing 0 · unused 0 · shape≠ 0 · dtypes ["F32"] · 1801920 params · layout OHWI · upstream keys == · OIHW↔OHWI ✓ · src sha b1c0c041293e  ✅
+S0 2x_NERVE_OTF_gan ×2: 50 tensors · generated 50 · missing 0 · unused 0 · shape≠ 0 · dtypes ["F32"] · 1781184 params · layout OHWI · upstream keys == · OIHW↔OHWI ✓ · src sha 478459e14289  ✅
+S0 module tree ×2: 50 keys == contract ✅
+S0 module tree ×4: 50 keys == contract ✅
+✅ S0 PASSED

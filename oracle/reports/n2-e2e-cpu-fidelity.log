@@ -1,0 +1,30 @@
+MLX_ENABLE_TF32=0
+   4x_NERVE_OTF_fidelity/photo-a__bicubic: vs torch 143.6 dB (max|Δ| 9.54e-07) · vs ONNX 143.8 dB
+   4x_NERVE_OTF_fidelity/photo-a__jpeg: vs torch 142.8 dB (max|Δ| 1.85e-06) · vs ONNX 142.9 dB
+   4x_NERVE_OTF_fidelity/photo-a__lanczos: vs torch 143.6 dB (max|Δ| 8.34e-07) · vs ONNX 143.9 dB
+   4x_NERVE_OTF_fidelity/graphic-a__bicubic: vs torch 140.7 dB (max|Δ| 1.31e-06) · vs ONNX 140.9 dB
+   4x_NERVE_OTF_fidelity/graphic-a__jpeg: vs torch 140.9 dB (max|Δ| 1.67e-06) · vs ONNX 141.0 dB
+   4x_NERVE_OTF_fidelity/graphic-a__lanczos: vs torch 140.7 dB (max|Δ| 1.39e-06) · vs ONNX 140.9 dB
+   4x_NERVE_OTF_fidelity/photo-b__bicubic: vs torch 143.0 dB (max|Δ| 1.25e-06) · vs ONNX 143.2 dB
+   4x_NERVE_OTF_fidelity/photo-b__jpeg: vs torch 142.0 dB (max|Δ| 1.91e-06) · vs ONNX 142.2 dB
+   4x_NERVE_OTF_fidelity/photo-b__lanczos: vs torch 143.0 dB (max|Δ| 1.31e-06) · vs ONNX 143.3 dB
+   4x_NERVE_OTF_fidelity/graphic-b__bicubic: vs torch 140.9 dB (max|Δ| 1.25e-06) · vs ONNX 141.1 dB
+   4x_NERVE_OTF_fidelity/graphic-b__jpeg: vs torch 141.3 dB (max|Δ| 1.94e-06) · vs ONNX 141.3 dB
+   4x_NERVE_OTF_fidelity/graphic-b__lanczos: vs torch 141.0 dB (max|Δ| 1.37e-06) · vs ONNX 141.1 dB
+   4x_NERVE_OTF_fidelity/photo-c__bicubic: vs torch 143.5 dB (max|Δ| 9.54e-07) · vs ONNX 143.6 dB
+   4x_NERVE_OTF_fidelity/photo-c__jpeg: vs torch 142.3 dB (max|Δ| 2.26e-06) · vs ONNX 142.3 dB
+   4x_NERVE_OTF_fidelity/photo-c__lanczos: vs torch 143.5 dB (max|Δ| 7.75e-07) · vs ONNX 143.7 dB
+   4x_NERVE_OTF_fidelity/graphic-c__bicubic: vs torch 140.9 dB (max|Δ| 1.31e-06) · vs ONNX 141.0 dB
+   4x_NERVE_OTF_fidelity/graphic-c__jpeg: vs torch 141.3 dB (max|Δ| 1.37e-06) · vs ONNX 141.2 dB
+   4x_NERVE_OTF_fidelity/graphic-c__lanczos: vs torch 140.9 dB (max|Δ| 1.22e-06) · vs ONNX 141.0 dB
+   4x_NERVE_OTF_fidelity/photo-d__bicubic: vs torch 143.9 dB (max|Δ| 1.43e-06) · vs ONNX 144.2 dB
+   4x_NERVE_OTF_fidelity/photo-d__jpeg: vs torch 143.0 dB (max|Δ| 1.25e-06) · vs ONNX 143.2 dB
+   4x_NERVE_OTF_fidelity/photo-d__lanczos: vs torch 143.9 dB (max|Δ| 9.54e-07) · vs ONNX 144.3 dB
+   4x_NERVE_OTF_fidelity/graphic-d__bicubic: vs torch 140.9 dB (max|Δ| 1.25e-06) · vs ONNX 141.0 dB
+   4x_NERVE_OTF_fidelity/graphic-d__jpeg: vs torch 141.5 dB (max|Δ| 1.94e-06) · vs ONNX 141.4 dB
+   4x_NERVE_OTF_fidelity/graphic-d__lanczos: vs torch 141.0 dB (max|Δ| 1.37e-06) · vs ONNX 141.1 dB
+   4x_NERVE_OTF_fidelity/photo-e__bicubic: vs torch 144.1 dB (max|Δ| 1.79e-06) · vs ONNX 143.9 dB
+   4x_NERVE_OTF_fidelity/photo-e__jpeg: vs torch 144.5 dB (max|Δ| 1.55e-06) · vs ONNX 144.5 dB
+   4x_NERVE_OTF_fidelity/photo-e__lanczos: vs torch 144.1 dB (max|Δ| 1.25e-06) · vs ONNX 144.0 dB
+N2 4x_NERVE_OTF_fidelity [cpu fp32] 27 cells: worst vs torch 140.7 dB · worst vs ONNX 140.9 dB · worst rel 1.96e-06 · (torch↔ONNX floor 145.1 dB) ✅
+✅ N2 PASSED

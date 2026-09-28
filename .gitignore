@@ -1,0 +1,18 @@
+.build/
+.swiftpm/
+Package.resolved
+# oracle: everything fetched or generated is reproducible from oracle/fetch_upstream.sh + the scripts
+oracle/.venv/
+oracle/pydeps/
+oracle/upstream/
+oracle/onnx/
+oracle/weights/
+oracle/goldens/
+oracle/**/__pycache__/
+# eyeball / bench outputs (reproducible with `nerve-smoke run|engine|study`); the logs stay tracked
+oracle/reports/**/*.png
+oracle/bench/
+*.safetensors
+!Sources/NERVEMLX/Resources/*.safetensors
+!Tests/**/Resources/*.safetensors
+.DS_Store

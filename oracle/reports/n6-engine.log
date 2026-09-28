@@ -1,0 +1,16 @@
+OK fidelity fp16 ×4 256x256 → 1024x1024 | needsDownload false | first 0.036 s · steady 0.023 s (22.1 ms/Mpx out, raw BGRA I/O) | mean 0.489 [0.000…1.000]
+MEM 256x256 ×4 fp16 | process start 5 MB · resident floor (post-load, cache cleared) phys 158 MB / MLX active 4 MB · run peak phys 599 MB / MLX 431 MB · activation (phys peak − floor) 441 MB → declare ×1.2+256 MB = 785 MB
+OK fidelity fp16 ×4 512x512 → 2048x2048 | needsDownload false | first 0.094 s · steady 0.086 s (20.4 ms/Mpx out, raw BGRA I/O) | mean 0.489 [0.000…1.000]
+MEM 512x512 ×4 fp16 | process start 7 MB · resident floor (post-load, cache cleared) phys 160 MB / MLX active 4 MB · run peak phys 1199 MB / MLX 846 MB · activation (phys peak − floor) 1039 MB → declare ×1.2+256 MB = 1503 MB
+OK fidelity fp16 ×4 1024x1024 → 4096x4096 | needsDownload false | first 0.359 s · steady 0.354 s (21.1 ms/Mpx out, raw BGRA I/O) | mean 0.489 [0.000…1.000]
+MEM 1024x1024 ×4 fp16 | process start 13 MB · resident floor (post-load, cache cleared) phys 165 MB / MLX active 4 MB · run peak phys 2287 MB / MLX 1312 MB · activation (phys peak − floor) 2122 MB → declare ×1.2+256 MB = 2802 MB
+OK fidelity fp16 ×4 1080x1920 → 4320x7680 | needsDownload false | first 0.734 s · steady 0.750 s (22.6 ms/Mpx out, raw BGRA I/O) | mean 0.489 [0.000…1.000]
+MEM 1080x1920 ×4 fp16 | process start 20 MB · resident floor (post-load, cache cleared) phys 173 MB / MLX active 4 MB · run peak phys 4340 MB / MLX 2591 MB · activation (phys peak − floor) 4167 MB → declare ×1.2+256 MB = 5257 MB
+OK fidelity fp16 ×4 2160x3840 → 8640x15360 | needsDownload false | first 5.299 s · steady 5.472 s (41.2 ms/Mpx out, raw BGRA I/O) | mean 0.489 [0.000…1.000]
+MEM 2160x3840 ×4 fp16 | process start 68 MB · resident floor (post-load, cache cleared) phys 221 MB / MLX active 4 MB · run peak phys 4922 MB / MLX 898 MB · activation (phys peak − floor) 4701 MB → declare ×1.2+256 MB = 5897 MB
+OK fidelity fp16 ×2 1080x1920 → 2160x3840 | needsDownload false | first 0.603 s · steady 0.586 s (70.6 ms/Mpx out, raw BGRA I/O) | mean 0.490 [0.000…1.000]
+MEM 1080x1920 ×2 fp16 | process start 12 MB · resident floor (post-load, cache cleared) phys 165 MB / MLX active 4 MB · run peak phys 3074 MB / MLX 2401 MB · activation (phys peak − floor) 2909 MB → declare ×1.2+256 MB = 3747 MB
+OK fidelity fp32 ×4 1080x1920 → 4320x7680 | needsDownload false | first 0.810 s · steady 0.757 s (22.8 ms/Mpx out, raw BGRA I/O) | mean 0.489 [0.000…1.000]
+MEM 1080x1920 ×4 fp32 | process start 12 MB · resident floor (post-load, cache cleared) phys 154 MB / MLX active 7 MB · run peak phys 6783 MB / MLX 4682 MB · activation (phys peak − floor) 6629 MB → declare ×1.2+256 MB = 8211 MB
+OK fidelity fp32 ×4 2160x3840 → 8640x15360 | needsDownload false | first 6.282 s · steady 6.676 s (50.3 ms/Mpx out, raw BGRA I/O) | mean 0.489 [0.000…1.000]
+MEM 2160x3840 ×4 fp32 | process start 68 MB · resident floor (post-load, cache cleared) phys 209 MB / MLX active 7 MB · run peak phys 5488 MB / MLX 1736 MB · activation (phys peak − floor) 5279 MB → declare ×1.2+256 MB = 6590 MB

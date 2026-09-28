@@ -1,0 +1,6 @@
+MLX_ENABLE_TF32=(unset → on) · device applegpu_g17s
+cache: warm
+[bracket before] AGX Device Utilization % over 30 s: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] — idle
+512x512: plk 441.1 ms (105.2 ms/Mpx out, spread 1.1 ms, peak 2151 MB) nerve16 70.5 ms (16.8 ms/Mpx out, spread 0.3 ms, peak 875 MB, ×0.16 plk) | anchor: plk 105.2 ms/Mpx vs 111 (AB-R-0365)
+[bracket after] AGX Device Utilization % over 30 s: [99, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] — 2 busy sample(s)
+512x512: plk 441.1 ms (105.2 ms/Mpx out, spread 1.1 ms, peak 2151 MB) nerve16 70.5 ms (16.8 ms/Mpx out, spread 0.3 ms, peak 875 MB, ×0.16 plk) | anchor: plk 105.2 ms/Mpx vs 111 (AB-R-0365)

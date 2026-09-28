@@ -1,0 +1,18 @@
+mlx-nerve-swift
+Copyright 2026 Xocialize
+
+This product is a Swift/MLX port of NERVE ("Norm-free Efficient Restoration for Various Edge devices")
+by Philip Hofmann (Phips), https://huggingface.co/Phips/NERVE, revision
+c23588c36988fc2058ea3d7db80646d3ecb12295, licensed under the Apache License, Version 2.0.
+
+The network code in Sources/NERVEMLX/NERVE.swift is derived from nerve_arch.py in that repository.
+
+The files Sources/NERVEMLX/Resources/*-mlx.safetensors are the five released NERVE checkpoints
+(4x_NERVE_OTF_fidelity, 4x_NERVE_release, 2x_NERVE_release, 4x_NERVE_OTF_gan, 2x_NERVE_OTF_gan),
+Copyright Philip Hofmann, Apache License 2.0, re-laid out from PyTorch (O, I, kH, kW) to MLX
+(O, kH, kW, I) convolution weights with no change of value; the sha256 of each source file is
+recorded in its safetensors metadata.
+
+Per the upstream model card, the released weights were trained only on the CC0-1.0 dataset
+Phips/lucid-cc0-v2-hc-512 (derived from Phips/lucid-cc0-v2, tiled from nyuuzyou/pxhere, a re-host of
+images published under pxhere.com's platform-wide CC0 licence).

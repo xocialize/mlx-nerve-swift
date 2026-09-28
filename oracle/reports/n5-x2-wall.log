@@ -1,0 +1,5 @@
+x2: 27 lows × 3 arms written to /Volumes/Satechi/Development/mlxengine-image/.claude/worktrees/zen-heisenberg-a7814d/WIP/mlx-nerve-swift/oracle/bench/x2
+[bracket before] AGX Device Utilization % over 8 s: [94, 0, 0, 0, 0, 0, 0, 0] — 1 busy sample(s)
+x2 wall 512x512 → ×2 (package run, rawBGRA8): NERVE-gan2x 79.2 ms · NERVE-fid4x-down 110.2 ms · NERVE-rel2x 78.4 ms
+x2 wall 1080x1920 → ×2 (package run, rawBGRA8): NERVE-gan2x 1201.8 ms · NERVE-fid4x-down 1398.9 ms · NERVE-rel2x 1093.2 ms
+[bracket after] AGX Device Utilization % over 8 s: [99, 0, 0, 0, 0, 0, 0, 0] — 1 busy sample(s)
