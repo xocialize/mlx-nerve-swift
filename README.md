@@ -30,6 +30,12 @@ checkpoint rather than ×4 + downsample: it won 17/27 cells on SSIMULACRA2 (+0.9
 vs 1.40 s) and never builds the 8K intermediate. The one counter-signal, recorded: its fidelity guard reads lower on
 photo (it invents a little more).
 
+**Why `.fidelity` is the default.** A later twelve-rung degradation ladder (100 hold-out tiles × 12 rungs) ranked
+`.sharp` first on DISTS (0.157 vs 0.180), but `.sharp` fell **below bicubic on PSNR at every rung**. PSNR and
+SSIMULACRA2, the two metrics in no arm's training loss, rank `.fidelity` above it, and `.fidelity` beats bicubic
+on all three. A fast tier must never be worse than doing nothing, so `.fidelity` stays the default. `.sharp` is
+there when you want the texture (decision AB-D-0107).
+
 ```swift
 let engine = MLXServeEngine()
 let id = try await engine.register(NERVEUpscalePackage.registration, configuration: NERVEConfiguration())
