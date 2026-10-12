@@ -123,6 +123,17 @@ Gates (2026-10-11, M5 Max):
   flat-neighbour share is 0.002–0.138, at or below the 16-bit interpolation's 0.015–0.165 on every image (the 8-bit
   model: 0.43–0.74).
 
+## Sub-native scale is a Lanczos reduction (0.2.1)
+
+A sub-native `scale` that has no native checkpoint (×1, ×3: the ×4 result reduced), at 8 or 16 bits, is now a vImage Lanczos reduction (AB-T-0232; the AB-T-0225 fix in mlx-realplksr-swift / mlx-heart-swift 0.2.1).
+- **The defect:** the CoreGraphics `.high` draw it replaces sampled on a corner-aligned grid. A reduction drifted
+  ±0.26 px from the centre toward the edges.
+- **What it cost** RealPLKSR and HEART at ×2: 1.7–2.8 dB on drawn content, ~0.2 dB on photos (AB-R-0502).
+- **Where it applied here:** ×1 and ×3 only. Every variant's ×2 is a native checkpoint and is unaffected.
+- **Test:** `resizeStaysRegisteredAcrossTheFrame` (blocks near both corners and the centre) failed on the old draw (4.26
+  for 4.00) and passes here.
+- **Unchanged:** native-scale outputs.
+
 ## Two design points worth knowing
 
 - **Bicubic as a sub-pixel convolution.** Torch's `F.interpolate(mode="bicubic", align_corners=False)` at an
