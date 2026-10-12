@@ -103,6 +103,26 @@ Through the real `MLXServeEngine` (raw BGRA in/out), fp16: 256² 0.023 s · 512�
 footprint (phys_footprint basis, measured at those five sizes) is 256 MB resident + 5.9 GB activation (fp16) /
 8.2 GB (fp32). The manifest comment has the table.
 
+## 16 bits end to end (0.2.0)
+
+The surface declares `ToolDescriptor.rawImageFormats = [.rawBGRA8, .rawRGBA16]` (MLXToolKit contract 1.52.0, AB-T-0229),
+the mlx-realplksr-swift 0.2.0 boundary.
+- A `.rawRGBA16` image comes back `.rawRGBA16`, and a PNG or TIFF deeper than 8 bits comes back as a 16-bit PNG.
+- Both run through the shared tile driver's 16-bit path (mlx-realesrgan-swift ≥ 0.8.1). The bicubic base is fp32 and
+  the fp16 body only adds a residual to it, so the output carries 59–65 k levels per channel at ×4.
+- The native ×2 checkpoint runs at 16 bits as well, so ForgeCore's ×6/×8 chain keeps 16 bits through its NERVE
+  pass. The sub-native resample (×1, ×3) runs at 16 bits too.
+- 8-bit inputs take the 8-bit path unchanged.
+
+Gates (2026-10-11, M5 Max):
+- **8-bit byte identity:** Release builds on the GPU, against v0.1.0, 4 images × {whole-frame, tiled} × {png ×4,
+  png ×2 (native), rawBGRA8 ×4, png ×3 (resized)}: 32/32 outputs byte-identical.
+- **16 bits agree with 8 bits:** an 8-bit image widened exactly to 16 bits rounds back to the 8-bit run's output
+  except at rounding boundaries (≤ 0.004% of values, max 0.502 of a step).
+- **G-6 direct gate** (draft, the AB-R-0489 set, through the Image Engine): the 16-bit output's smooth-area
+  flat-neighbour share is 0.002–0.138, at or below the 16-bit interpolation's 0.015–0.165 on every image (the 8-bit
+  model: 0.43–0.74).
+
 ## Two design points worth knowing
 
 - **Bicubic as a sub-pixel convolution.** Torch's `F.interpolate(mode="bicubic", align_corners=False)` at an
